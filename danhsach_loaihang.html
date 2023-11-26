@@ -1,0 +1,54 @@
+<div>
+    <div>
+        <h1>Danh sách loại hàng</h1>
+    </div>
+    <div>
+        <div class="mb10 frmloai">
+            <table>
+                <tr>
+                    <th>ĐÁNH DẤU</th>
+                    <th>MÃ LOẠI</th>
+                    <th>TÊN LOẠI</th>
+                    <th>HÀNH ĐỘNG</th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>001</th>
+                    <th>game</th>
+                    <th><input type="button" value="Sửa"> <input class="red" type="button" value="Xóa"></th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>001</th>
+                    <th>game</th>
+                    <th><input type="button" value="Sửa"> <input class="red" type="button" value="Xóa"></th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>001</th>
+                    <th>game</th>
+                    <th><input type="button" value="Sửa"> <input class="red" type="button" value="Xóa"></th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>001</th>
+                    <th>game</th>
+                    <th><input type="button" value="Sửa"> <input class="red" type="button" value="Xóa"></th>
+                </tr>
+            </table>
+        </div>
+        <form action="index.php?act=addtocart" method="post">
+            <input type="hidden" name="id_product" value="'.$id_product.'">
+            <input type="hidden" name="img_product" value="'.$img_product.'">
+            <input type="hidden" name="name_product" value="'.$name_product.'">
+            <input type="hidden" name="price_product" value="'.$price_product.'">
+            <input type="submit" name="addtocart" value="">
+        </form>
+        <div class="mb10">
+            <input type="button" value="Chọn tất cả">
+            <input type="button" value="Bỏ chọn tất cả">
+            <input type="button" class="red" value="Xóa các mục đã chọn">
+            <a href="admin.php"><input type="button" value="Nhập thêm"></a>
+        </div>
+    </div>
+</div>

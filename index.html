@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaevely Shop - Mô hình đồ chơi Figure, Anime chính hãng</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.3.0-web/css/all.css">
+
+    <!-- <script src="../main.js"></script> -->
+</head>
+<body>
+    <main>
+        <div id="cursor-tracking">
+            <div class="img-scale">
+                <img id="anchor" src="../assets/img/anya-stick.png">
+                <div id="eyes">
+                    <img style="top: -390px;left: 224px;" class="eye" src="../assets/img/eyes-anya.png">
+                    <img style="top: -311px;left: 340px;" class="eye" src="../assets/img/eyes-anya.png">
+                </div>
+            </div>
+            <div class="media-tracking">
+                <div class="media-icon icon-fb">
+                    <a href="https://www.facebook.com/chfigtest/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="media-icon icon-yt">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="media-icon icon-tiktok">
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="media-icon icon-discord">
+                    <a href="https://discordapp.com/users/366936864697090053"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <div class="media-icon icon-tw">                               
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <img src="../assets/img/Logo.png" class="logo" alt=""/>
+            <div id="nav">
+                <div id="head-menu" class="navhover">
+                    <a href="" class="head-menu-btn">
+                        <i class="fa-solid fa-bars menu-icon"></i>
+
+                    </a>
+                    <div class="catalog-menu-dropdown">
+                        <div class="catalog-menu-content">
+                            <div id="main-catalog-title">
+                                Danh mục sản phẩm
+                            </div>
+                            <div style="height: 12px; border-top: 1px solid #CDCFD0;"></div>
+                            <div id="catalog-nav-section">
+                                <div class="catalog-content">
+                                    <div class="sub-catalog-title">
+                                        <i class="fa-solid fa-gamepad" style="color: rgb(51, 71, 156);">
+                                        </i>
+                                        <a href="" class="menu-title">game</a>
+                                    </div>
+                                    <ul>
+                                        <li class="catalog-content-nav"><a href="">arknights</a></li>
+                                        <li class="catalog-content-nav"><a href="">azur lane</a></li>
+                                        <li class="catalog-content-nav"><a href="">blue archive</a></li>
+                                        <li class="catalog-content-nav"><a href="">genshin impact</a></li>
+                                        <li class="catalog-content-nav"><a href="">honkai impact 3rd</a></li>
+                                        <li class="catalog-content-nav"><a href="">league of legends</a></li>
+                                        <li class="catalog-content-nav"><a href="">fate/grand order</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="catalog-content">
+                                    <div class="sub-catalog-title">
+                                        <i class="fa-solid fa-dice" style="color: rgb(51, 71, 156);">
+                                        </i>
+                                        <a href="" class="menu-title">anime</a>
+                                    </div>
+                                    <ul>
+                                        <li class="catalog-content-nav"><a href="">86 - Eighty Six</a></li>
+                                        <li class="catalog-content-nav"><a href="">bleach</a></li>
+                                        <li class="catalog-content-nav"><a href="">chainsaw man</a></li>
+                                        <li class="catalog-content-nav"><a href="">gintama</a></li>
+                                        <li class="catalog-content-nav"><a href="">kimetsu no yaiba</a></li>
+                                        <li class="catalog-content-nav"><a href="">one piece</a></li>
+                                        <li class="catalog-content-nav"><a href="">spy x family</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="catalog-content">
+                                    <div class="sub-catalog-title">
+                                        <i class="fa-solid fa-chess" style="color: rgb(51, 71, 156);">
+                                        </i>
+                                        <a href="" class="menu-title">Figure brand</a>
+                                    </div>
+                                    <ul>
+                                        <li class="catalog-content-nav"><a href="">Alter</a></li>
+                                        <li class="catalog-content-nav"><a href="">Aniplex</a></li>
+                                        <li class="catalog-content-nav"><a href="">Good Smile Company</a></li>
+                                        <li class="catalog-content-nav"><a href="">Kotobukiya</a></li>
+                                        <li class="catalog-content-nav"><a href="">Max Factory</a></li>
+                                        <li class="catalog-content-nav"><a href="">Megahouse</a></li>
+                                        <li class="catalog-content-nav"><a href="">Orange Rouge</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="catalog-content">
+                                    <div class="sub-catalog-title">
+                                        <i class="ti-github" style="color: rgb(51, 71, 156);">
+                                        </i>
+                                        <a href="" class="menu-title">Manga</a>
+                                    </div>
+                                    <ul>
+                                        <li class="catalog-content-nav"><a href="">Shonen</a></li>
+                                        <li class="catalog-content-nav"><a href="">comedy</a></li>
+                                        <li class="catalog-content-nav"><a href="">horror</a></li>
+                                        <li class="catalog-content-nav"><a href="">romance</a></li>
+                                        <li class="catalog-content-nav"><a href="">slice of life</a></li>
+                                        <li class="catalog-content-nav"><a href="">yuri</a></li>
+                                        <li class="catalog-content-nav"><a href="">fantasy</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="catalog-content">
+                                    <div class="sub-catalog-title">
+                                        <i class="fa-solid fa-shirt" style="color: rgb(51, 71, 156);">
+                                        </i>
+                                        <a href="" class="menu-title">khác</a>
+                                    </div>
+                                    <ul>
+                                        <li class="catalog-content-nav"><a href="">áo</a></li>
+                                        <li class="catalog-content-nav"><a href="">ốp lưng</a></li>
+                                        <li class="catalog-content-nav"><a href="">móc khóa</a></li>
+                                        <li class="catalog-content-nav"><a href="">balo - túi xách</a></li>
+                                        <li class="catalog-content-nav"><a href="">lót chuột</a></li>
+                                        <li class="catalog-content-nav"><a href="">phụ kiện</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="https://www.google.com/search" method="get" class="search-bar">
+                <input type="text" placeholder="Bạn muốn mua gì..." name="q">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass search-btn"></i>
+                </button>
+            </form>
+                <ul id="nav">
+                    <li class="navhover"><a href="">
+                        Về chúng tôi
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                        </a>
+                        <div class="fake-triangle"></div>
+                        <ul class="subnav">
+                            <a href=""><li class="intro">Giới thiệu</li></a>
+                            <div class="divbetween2li"></div>
+                            <a href=""><li class="main-category">bộ sưu tập</li></a>
+                            <div class="divbetween2li"></div>
+                            <a href=""><li class="blog">blog</li></a>
+                            <div class="divbetween2li"></div>
+                            <a href=""><li class="feedback">Feedback</li></a>
+                        </ul>
+                    </li>
+                    <li class=" navhover"><a href="">
+                        <i class="fa-solid fa-user"></i>
+                        Tài khoản</a>
+                        <div class="fake-triangle" style="margin-left: 105px;"></div>
+                        <div id="logintop">
+                            <div class="dflex">
+                                <p class="mini-login-title">Đăng nhập</p>
+                            Tài khoản <input type="text">
+                            <br/>
+                            Mật khẩu <input type="password">
+                            <form action="" method="post" class="">
+                                <button type="submit">
+                                    <p>Đăng nhập</p>
+                                </button>
+                            </form>
+                            <span><a href="">Quên mật khẩu</a></span>
+                            <!-- <br/> -->
+                            <span><a href="">Đăng ký ngay</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="h-cart navhover"><a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Giỏ hàng</a>
+                        <div class="fake-triangle" style="margin-left: 105px;"></div>
+                        <div id="head-cart">
+                            <div id="total-count">
+                                <span class="text-left">Tổng cộng:</span>
+                                <span class="cash-amount-right">0 VNĐ</span>
+                            </div>
+                            <div id="head-pay-btn">
+                                <form action="" method="post" class="payment">
+                                    <button type="submit">
+                                        <p>Thanh Toán</p>
+                                        <i class="arrow-right ti-angle-right"></i>
+                                    </button>
+                                </form>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navhover"><a href="">
+                        <i class="fa-solid fa-envelope"></i>
+                        Liên hệ
+                        </a>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="webpadding">
+            <div id="slider">
+                <div class="slideshow-container">
+                    <!-- Full-width images -->
+                    <div class="mySlides fade">
+                      <img src="../assets/img/lantern-rite-2022.jpg" style="width:100%">
+    
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="../assets/img/86-united.jpg" style="width:100%">
+    
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="../assets/img/86-a-picutre.jpg" style="width:100%">
+    
+                    </div>
+                  
+                    
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="showSlides()">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <div class="dot-style">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+            </div>
+    
+            <div id="content">
+                <div class="content-repeat">
+                    <div class="content-title">
+                       sản phẩm đang giảm giá
+                    </div>
+                    <div id="sub-title">
+                        giá giảm sâu, lâu lâu mới có đó bạn ơi !!!
+                    </div>
+                    
+                    <div class="item-box" >
+                        <div class="product-list" >
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/lena-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href="product.html"><img src="../assets/img/lena-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <div class="discount-badge">-14%</div>
+                                    <div class="order-badge">order</div>
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="category">
+                                    Figure
+                                </a>
+                                <a href="product.html" class="product-name">
+                                    Vladilena Milizé - (Good Smile Company) Figure 
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        860,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        1,000,000đ
+                                    </p>
+                                </div>
+                                <br/>
+                                <div class="quanandcart">
+                                    <div class="quantity-box">
+                                        <input placeholder="" type="number" value="1" name="" id="">
+                                    </div>
+                                    <div class="addtocart">
+                                        <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/mona-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/mona-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <div class="discount-badge">-17%</div>
+                                    <div class="order-badge">order</div>
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="category">
+                                    Figure
+                                </a>
+                                <a href="" class="product-name">
+                                    Mona Megistus - (Good Smile Company) Figure 
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        3,000,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        3,600,000đ
+                                    </p>
+                                </div>
+                                <br/>
+                                <div class="quanandcart">
+                                    <div class="quantity-box">
+                                        <input type="number" value="1" name="" id="">
+                                    </div>
+                                    <div class="addtocart">
+                                        <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div>
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="category">
+                                    Figure
+                                </a>
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        1,000,000đ
+                                    </p>
+                                </div>
+                                <br/>
+                                <div class="quanandcart">
+                                    <div class="quantity-box">
+                                        <input type="number" value="1" name="" id="">
+                                    </div>
+                                    <div class="addtocart">
+                                        <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/kaori-1.png" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/kaori-2.png" alt="" class="hover-img"></a>
+                                    </div>
+                                    <div class="discount-badge">-5%</div>
+                                    <div class="order-badge">order</div>
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="category">
+                                    Figure
+                                </a>
+                                <a href="" class="product-name">
+                                    Kaori Miyazono - (Good Smile Company) Figure
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        4,000,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        4,200,000đ
+                                    </p>
+                                </div>
+                                <br/>
+                                <div class="quanandcart">
+                                    <div class="quantity-box">
+                                        <input type="number" value="1" name="" id="">
+                                    </div>
+                                    <div class="addtocart">
+                                        <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/jjk-vol1-1.png" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/jjk-vol1-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-20%</div>
+                                <div class="order-badge">order</div>
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="category">
+                                    Manga
+                                </a>
+                                <a href="" class="product-name">
+                                    Chú Thuật Hồi Chiến Vol 1
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        30,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        50,000đ
+                                    </p>
+                                </div>
+                                <br/>
+                                <div class="quanandcart">
+                                    <div class="quantity-box">
+                                        <input type="number" value="1" name="" id="">
+                                    </div>
+                                    <div class="addtocart">
+                                        <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div>
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+                                    <p class="last-price">
+                                        1,000,000đ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-repeat">
+                    <div class="content-title">
+                        Sản phẩm bán chạy
+                    </div>
+                    <div id="sub-title">
+                        ngắm rồi thì sắm nhanh thôi nào !!!
+                    </div>
+                    <div class="item-box">
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-queue">
+                                <div class="imgbox">
+                                    <img src="../assets/img/anya-1.jpg" alt="" class="preview-img">
+                                    <div class="overlay-img">
+                                        <a href=""><img src="../assets/img/anya-2.jpg" alt="" class="hover-img"></a>
+                                    </div>
+                                    <!-- <div class="discount-badge">-10%</div>
+                                    <div class="order-badge">order</div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="product-detail">
+                                <a href="" class="product-name">
+                                    Anya Forger - (Good Smile Company) Figure
+                                </a>
+                                <div class="nor-price">
+                                    <p class="current-price">
+                                        900,000đ
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="oswrapped-home-info">
+                <div class="wrapped-home-info">
+                    <div class="home-info">
+                        <div class="home-info-img">
+                            <div class="home-info-img-info">
+                                <p>Về chúng tôi</p>
+                                    <p class="learnmore-btn">
+                                        <a href="">tìm hiểu thêm</a>
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="home-info-detail">
+                            <h4><strong>Chaevely Shop chuyên cung cấp các sản phẩm mô hình anime tĩnh, khớp động và mô hình nhựa lắp ráp Gundam, KIT... cùng các anime goods, tạp chí có xuất xứ Nhật Bản.</strong></h4>
+                            <p>Ngoài các sản phẩm có sẵn, Chaevely Shop còn cung cấp các dịch vụ sau:</p>
+                            <p><i class="fa-solid fa-rocket"></i>　Dịch vụ order các sản phẩm anime sắp ra mắt hoặc đang lưu hành tại Nhật Bản, với thời gian vận chuyển cam kết trong vòng 10-21 ngày.</p>
+                            <p><i class="fa-solid fa-dungeon"></i>　Dịch vụ thu gom, mua hộ hàng hóa anime từ các website thương mại điện tử hợp pháp tại Nhật Bản với giá dịch vụ hợp lý và hệ thống báo cáo trạng thái đơn hàng hàng tự động 24/7.</p>
+                            <p><i class="fa-solid fa-sack-dollar"></i>　Hợp tác nhập sỉ và CTV bán lẻ.</p>
+                            <h4><strong>Tháng 10/2022, Chaevely Shop triển khai thêm dịch vụ tư vấn thiết kế và thi công tủ/box trưng mô hình. Hướng đến đối tượng là người mới chơi figure, người dùng có không gian trưng bày hẹp hay cần sự linh hoạt trong vận chuyển... Chaevely Shop đã ra mắt sản phẩm MODULE BOX trưng với kiểu dáng sang trọng, tinh gọn và giá vô cùng hợp lý.</strong></h4>
+                            <p>Đến với&nbsp;Chaevely Shop, bạn sẽ được sở hữu các&nbsp;<strong>SẢN PHẨM CHÍNH HÃNG NHẬT BẢN</strong>&nbsp;với&nbsp;<strong>PHONG CÁCH PHỤC VỤ CHUẨN NHẬT BẢN</strong>&nbsp;với phương châm&nbsp;<strong>TRẢI NGHIỆM HOÀN HẢO CỦA KHÁCH HÀNG LÀ TIÊU CHUẨN CƠ BẢN CỦA SHOP CHÚNG TÔI</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-footer">
+                <div class="news-letter">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p style="margin-left: 4px;">Đăng ký nhận tin</p>
+                </div>
+                <form action="https://www.google.com/search" method="get" class="mail-bar">
+                    <input type="text" placeholder="Nhập email của bạn ở đây..." name="q">
+                    <button type="submit" class="submit-btn">
+                        <p style="margin-top: -2px;">Đăng ký ngay!</p>
+                    </button>
+                </form>
+                <div style="display: flex;">
+                    <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                    <p style="margin-left: 8px;">Hỗ trợ / Mua hàng: <span class="green-text">09xx.xxx.xxx</span></p>
+                </div>
+
+            </div>
+            <div class="bottom-footer">
+                <div class="footer-item">
+                    <div class="footer-sub-title">giới thiệu</div>
+                    <div class="footer-sub-content">
+                        <p>
+                            Chaevely Figure Shop - trang mua sắm trực tuyến các sản phẩm anime chính hãng Nhật Bản tại Việt Nam.
+                        </p>
+                        <div class="media-container">
+                            <div class="media-icon icon-fb">
+                                <a href="https://www.facebook.com/chfigtest/"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                            <div class="media-icon icon-yt">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="media-icon icon-tiktok">
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div class="media-icon icon-discord">
+                                <a href="https://discordapp.com/users/366936864697090053"><i class="fa-brands fa-discord"></i></a>
+                            </div>
+                            <div class="media-icon icon-tw">                               
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-sub-title">thông tin liên hệ</div>
+                    <div class="footer-sub-content contact-info">
+                        <a href="https://www.google.com/maps/place/C%C3%B4ng+an+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.7594695,106.6872849,15z/data=!4m5!3m4!1s0x0:0x633380c9bf79d5b9!8m2!3d10.7594695!4d106.6872849">
+                            <p style="margin-bottom: 10px;"><span><i class="fa-solid fa-map-location-dot icona"></i></span>
+                                268 Trần Hưng Đạo Q1 TP.Hồ Chí Minh
+                            </p>
+                        </a>
+                        <p><span><i class="fa-solid fa-square-phone icona"></i></span>09xx.xxx.xxx</p>
+                        <p><span><i class="fa-solid fa-envelope icona"></i></span>nakchancute99@gmail.com</p>
+                        <p><span><i class="fa-solid fa-business-time icona"></i></span>Giờ làm việc: 8AM - 10PM</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-sub-title">fanpage</div>
+                    <div class="footer-sub-content">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchfigtest&width=340&height=201&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="151" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-sub-title">hỗ trợ</div>
+                    <div class="footer-sub-content footer-support">
+                        <p><a href="">Tìm kiếm</a></p>
+                        <p><a href="">Giới thiệu</a></p>
+                        <p><a href="">Chính sách đổi trả</a></p>
+                        <p><a href="">Chính sách bảo mật</a></p>
+                        <p><a href="">Điều khoản dịch vụ</a></p>
+                        <p><a href="">Liên hệ</a></p>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <script src="../main.js"></script>
+</body>
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "110425445296023");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+</html>

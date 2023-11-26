@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 300;
+        }
+
+        .menu-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -100%; /* Initially off-screen */
+            width: 80%; /* Adjust as needed */
+            height: 100%;
+            background-color: #333;
+            color: white;
+            transition: left 0.3s ease-in-out;
+            z-index: 1;
+            overflow: auto;
+        }
+
+        .menu-line {
+            list-style-type: none;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+            position: relative;
+        }
+
+        .menu-line:last-child {
+            border-bottom: none;
+        }
+
+        .submenu {
+            display: none;
+            width: 50%;
+            background-color: #222;
+            position: absolute;
+            top: 100%; /* Below the menu item */
+            left: 0;
+            z-index: 2; /* Above the content */
+        }
+
+        .menu-line.open .submenu {
+            display: block;
+        }
+
+        .menu-line::before {
+            content: '\25B6'; /* Unicode for right-pointing triangle (▶) */
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .menu-line.open::before {
+            content: '\25BC'; /* Unicode for down-pointing triangle (▼) */
+        }
+
+        .submenu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .submenu a:hover {
+            background-color: #444;
+        }
+
+        #menu.active {
+            left: 0; /* Slide in from the left when active */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="menu-line has-submenu" onclick="toggleSubmenu(this)">
+                <a href="#">Home</a>
+                <div class="submenu">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                </div>
+            </li>
+            <li class="menu-line has-submenu" onclick="toggleSubmenu(this)">
+                <a href="#">About</a>
+                <div class="submenu">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                </div>
+            </li>
+            <li class="menu-line has-submenu" onclick="toggleSubmenu(this)">
+                <a href="#">Services</a>
+                <div class="submenu">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                </div>
+            </li>
+            <li class="menu-line has-submenu" onclick="toggleSubmenu(this)">
+                <a href="#">Contact</a>
+                <div class="submenu">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 2000px; background-color: #f0f0f0;"> <!-- Content below menu -->
+        Scroll down to see content below the menu.
+    </div>
+    <script>
+        // JavaScript code here
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+        function toggleSubmenu(element) {
+            element.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
