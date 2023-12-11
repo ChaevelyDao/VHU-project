@@ -281,10 +281,11 @@ input[type="reset"]:hover {
     /* display: none; */
     position: relative;
     position: fixed;
-    left: -164px;
+    left: 0;
     z-index: 998;
-    scale: 0.4;
+    scale: 0.35;
     bottom: 20%;
+    width: 0;
 }
 
 .img-scale {}
@@ -1728,6 +1729,10 @@ input[type="reset"]:hover {
 
 @media (min-width: 1024px) and (max-width: 1500px) {
     .w70 {}
+
+    #cursor-tracking{
+        scale: 0.3;
+    }
 
     .catalog-menu-dropdown {
         margin-left: -70px;
